@@ -80,6 +80,15 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+            <plugin>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-contract-maven-plugin</artifactId>
+                <version>1.1.1.RELEASE</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <packageWithBaseClasses>com.example.contracttesting</packageWithBaseClasses>
+                </configuration>
+            </plugin>
 		</plugins>
 	</build>
 
