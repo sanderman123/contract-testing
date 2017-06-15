@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-mvn surefire:test -Dtest=MockServerRunner -DrunMockServer
+./mvnw surefire:test -Dtest=MockServerRunner -DrunMockServer

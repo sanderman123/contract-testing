@@ -8,7 +8,7 @@ public class TodoController {
 
     Todo todo = new Todo("hallo", false);
 
-    @GetMapping(value = "/todo")
+    @GetMapping(value = "/api/todo")
     public Todo getTodo() {
         return this.todo;
     }
