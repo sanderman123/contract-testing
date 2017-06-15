@@ -9,7 +9,7 @@ org.springframework.cloud.contract.spec.Contract.make {
         status 200
         body("""
             {
-                "title": "hallo aap",
+                "title": "hallo",
                 "done": false
             }
         """)
