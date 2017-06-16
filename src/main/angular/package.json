@@ -5,8 +5,10 @@
   "scripts": {
     "ng": "ng",
     "start": "yarn run mocks | yarn run serve",
+    "start:win": "start yarn run mocks:win & start yarn run serve",
     "serve": "ng serve --proxy-config proxy.conf.json",
     "mocks": "./run-mock-server.sh",
+    "mocks:win": "\"\" \"%PROGRAMFILES%\\Git\\bin\\sh.exe\" --login ./run-mock-server.sh",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
