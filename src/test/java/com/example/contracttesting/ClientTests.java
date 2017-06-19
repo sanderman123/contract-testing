@@ -14,7 +14,7 @@ import java.net.URL;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment= SpringBootTest.WebEnvironment.NONE)
-@AutoConfigureStubRunner(ids = {"com.example:contract-testing:+:stubs:6565"}, workOffline = true)
+@AutoConfigureStubRunner(ids = {"com.example:contract-testing:+:stubs:6464"}, workOffline = true)
 @DirtiesContext
 public class ClientTests {
     private final String USER_AGENT = "Mozilla/5.0";
@@ -25,7 +25,7 @@ public class ClientTests {
         System.out.println("==================JOHOEHHEOHEOHEOEH====================");
 
         try {
-            sendGet("http://localhost:6565/todo");
+            sendGet("http://localhost:6464/api/todo");
             System.out.println("==================Success====================");
         } catch (Exception e) {
             e.printStackTrace();
